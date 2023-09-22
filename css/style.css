@@ -156,11 +156,23 @@ svg {
   gap: 1rem;
 }
 
-#projects img {
+#projects .img {
   border-radius: 33px;
   border: 6px solid var(--secondary);
   background: var(--secondary);
   box-shadow: 6px 8px 0px 0px var(--secondary);
+}
+#projects a {
+  object-fit: cover;
+}
+
+#projects img {
+  border-radius: 33px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 h3 {
@@ -261,6 +273,10 @@ footer {
   #contact h2 {
     font-size: 36px;
   }
+
+  footer {
+    margin: 20px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -275,8 +291,12 @@ footer {
     display: block;
   }
 
-  #contact h2 {
+  h2 {
     font-size: 32px;
+  }
+
+  #projects .img {
+    margin-top: 2rem;
   }
 }
 
@@ -293,6 +313,9 @@ footer {
     flex-direction: column;
   }
 
+  h2 {
+    font-size: 26px;
+  }
   #contact h2 {
     font-size: 26px;
   }
