@@ -172,8 +172,7 @@ h3 {
 }
 
 #contact h2 {
-  text-shadow: 3px 3px 0px var(--secondary);
-  font-size: 50px;
+  font-size: 44px;
   padding-bottom: 0;
 }
 
@@ -188,6 +187,7 @@ h3 {
   width: 70px;
   height: 70px;
   display: flex;
+  margin: 1rem;
 }
 
 #contact svg {
@@ -198,9 +198,10 @@ h3 {
 .links {
   padding-top: 3rem;
   display: flex;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 0.6rem;
   flex-wrap: wrap;
-  margin: auto;
+  max-width: 486px;
 }
 
 .flex {
@@ -256,6 +257,10 @@ footer {
   #projects .flex {
     grid-template-columns: 2fr 4fr;
   }
+
+  #contact h2 {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -268,6 +273,10 @@ footer {
   }
   #projects .flex {
     display: block;
+  }
+
+  #contact h2 {
+    font-size: 32px;
   }
 }
 
@@ -282,5 +291,9 @@ footer {
 
   .flex {
     flex-direction: column;
+  }
+
+  #contact h2 {
+    font-size: 24px;
   }
 }
