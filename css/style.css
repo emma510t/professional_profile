@@ -138,6 +138,24 @@ h1 {
   grid-template-columns: 3fr 8fr;
 }
 
+svg {
+  display: block;
+}
+
+.project_info {
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+  padding: 1rem 0 0 0;
+}
+
+#projects .files {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 #projects img {
   border-radius: 33px;
   border: 6px solid var(--secondary);
@@ -156,7 +174,7 @@ h3 {
 #contact h2 {
   text-shadow: 3px 3px 0px var(--secondary);
   font-size: 50px;
-  margin-bottom: 4rem;
+  padding-bottom: 0;
 }
 
 #contact a {
@@ -175,6 +193,14 @@ h3 {
 #contact svg {
   margin: auto;
   display: block;
+}
+
+.links {
+  padding-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .flex {
